@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GROUP 5 Portfolio</title>
+  <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #6391ec;
+    }
+    .navbar {
+      background-color: #576ff591;
+      width: 100%;
+      margin: auto;
+      padding: 35px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .navbar ul li{
+      list-style: none;
+      display: block;
+      margin: 0 20px;
+      position: relative;
+    }
+    .navbar ul li a{
+      text-decoration: none;
+      color: #3868ec50;
+      text-transform: uppercase;
+    }
+    .navbar ul li::after{
+      content: '';
+      height: 3px;
+      width: 0%;
+      background: #5d06ad;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+    }
+    .navbar ul li:hover::after{
+      width: 100%;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgb(0, 4, 5);
+    }
+    .jumbotron {
+      background-image: url(makati.png.png)
+      background-size cover;
+      color: rgb(241, 238, 238);
+    }
+    .portfolio-item {
+      margin-bottom: 30px;
+    }
+    .bg-image {
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/makati.png);
+      background-position: center;
+      background-size: cover;
+    }
+    .image-container {
+     float: right;
+     margin: 0;
+     width: 15%;
+    }
+    .image {
+      float: right;
+      margin: 0;
+      padding: 10px;
+}
+.running-text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.running-text p {
+  animation: running-text-animation 10s linear infinite;
+}
+
+@keyframes running-text-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Running Text Example</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="bg-image" 
+     style="background-image: url('makati.png.png');
+            height: 300vh">
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">ACT1B Company</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <img src="makati.png.png" class="background-image" height="50" width="800"> 
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+           <h3>
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</h3>
+
+
+<!-- <div class="running-text">
+  <h1> <p> is a running text example using CSS animation.</p></h1>
+</div> -->
+  <!-- Jumbotron -->
+  <div class="jumbotron text-center "> 
+    <div class="running-text">
+    <h1 class="text-success" style="font-size: 80px;">Welcome To Our Company</h1>
+    <h2><p class="text-primary">We are delighted to welcome you to our virtual home. At Web Genius Solutions, we believe that every great
+       journey begins with a warm welcome, and we're thrilled that you've chosen to explore our website. </p></h2>
+  </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h1 class="text-xl-center text-success" >WEB GENIUS SOLUTIONS</h1>
+    <br></br><br></br>
+    <div class="row">
+      <div class="image-with-border">
+      <div class="col-md-11">
+    <div class="image-container">
+      <img src="reyorolfo.png" alt="Your Image" width="250%" height="350%">
+    </div>
+    <div class="row">
+      <div class="col-md-10">
+    <div class="image">
+      <img src="amante.png" alt="Your Image" width="120%" height="950vh">
+    </div>
+    <div class="row">
+      <div class="col-md-11">
+        <div class="portfolio-item">
+          <img src="ceo.png" class="img-thumbnail 1" alt="Project 1">
+          <h1> <p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.397);" > I'm Derimdy Dacillo - IT Manager </h1></p> 
+          <p><h4> <p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.527);"> Managing and leading a team of IT professionals, including
+             technicians, administrators, developers, and support staff. </p></p> </h4>
+        </div>
+        <br></br>
+      <div class="col-md-15">
+        <div class="portfolio-item">
+          <img src="coo.png" class="img-thumbnail 2" alt="Project 2">
+          <h1><p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.397);" > I'm Val Pama - IT Analyst  </h4></p> 
+          <p><h4> <p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.534);" > Working closely with IT teams, project managers, business
+             stakeholders, and vendors to ensure successful project outcomes. </p></p></h4>
+        </div>
+        <br></br>
+      </div>
+      <div class="col-md-15">
+        <div class="portfolio-item">
+          <img src="it.png" class="img-thumbnail 3" alt="Project 3">
+          <h1> <p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.397);" >Ken Bellen - IT Support </p> </h1>
+          <p><h4> <p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.582);" > Assisting users with software installation, hardware troubleshooting, 
+            and general computer problems. Managing and troubleshooting network connectivity and related issues. </p></h4>
+        </div>
+        <br></br>
+      </div>
+      <div class="col-md-15">
+        <div class="portfolio-item">
+          <img src="cuya.png" class="img-thumbnail" alt="Project 4">
+          <h1><p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.397);" > I'm Rameld Cuya - Wev. Dev.  </h1></p> 
+          <p><h4> <p class="font-weight-bold" style="background-color: rgba(171, 247, 222, 0.445);" > Building a portfolio of personal projects can showcase your skills and
+             creativity to potential employers or clients. </p></p></h4>
+         </div>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5><p class="font-weight-bold">Web Genius Solutions. is a forward-thinking company specializing
+             in providing innovative solutions to drive growth, efficiency, 
+             and success for businesses worldwide.</p></h5>
+        </div>
+        <div class="col-md-6">
+          <h5> <p class="font-weight-bold">With a comprehensive suite of services and a team of experts
+             dedicated to Develop, we transform challenges into
+             opportunities.</p></h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2 class="text-xl-center mb-4" >Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5><p> <p class="font-weight-bold" style="background-color: rgba(72, 89, 245, 0.5);" >Contact information and form here.<br>687-9999 or 899-1234</br></p></h5>
+      </div>
+      <div class="col-md-6">
+        <h4> <p> <p class="font-weight-bold" style="background-color: rgba(51, 53, 185, 0.062);" >Map or additional contact details here.<br>https://www.google.com/maps/place/Pamantasan+ng+Lungsod+ng+Muntinlupa</br></p></h4>
+      </div>
+    </div>
+  </div>
+
+
+  </section>
+
+  
+</body>
+</html>
